@@ -1,5 +1,4 @@
 {
-  "name": "Fun Math Game",
   "version": "0.0.1",
   "description": "Introduction to visual testing",
   "repository": "https://github.com/Ceerii/The-Fabulous-Mathemagician-1",
@@ -29,8 +28,11 @@
     "build": "rollup --config rollup.config.js",
     "build:watch": "rollup --config rollup.config.js --watch",
     "lint": "eslint src/",
-    "pretest": "eslint --ignore-pattern TypingEnded.js src/",
+    "pretest": "eslint --ignore-pattern gameTest.js src/",
     "test": "jest",
     "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^8.16.0"
   }
 }

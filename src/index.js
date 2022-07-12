@@ -1,10 +1,7 @@
 import '../css/index.css';
-import TypingEnded from './TypingEnded';
+import Display from './Display';
+import Game from './Game';
 
-
-const typingEnded = new TypingEnded();
-
-typingEnded.getGame();
-
-window.typingEnded = typingEnded;
-
+const root = document.getElementById('root');
+const display = new Display(root);
+new Game(display);
